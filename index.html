@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo Sudoku</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div id="menu-toggle">&#9776;</div>
+  <nav id="side-menu">
+    <h2>Nível</h2>
+    <ul>
+      <li><button onclick="setLevel('easy')">Fácil (<span id="win-easy">0</span>)</button></li>
+      <li><button onclick="setLevel('medium')">Médio (<span id="win-medium">0</span>)</button></li>
+      <li><button onclick="setLevel('hard')">Difícil (<span id="win-hard">0</span>)</button></li>
+      <li><button onclick="setLevel('expert')">Expert (<span id="win-expert">0</span>)</button></li>
+    </ul>
+  </nav>
+  <h1>Sudoku</h1>
+  <div id="game-container"></div>
+  <footer>
+    <p>&copy; 2025 André Luiz Silva Dias Borges. Todos os direitos reservados.</p>
+  </footer>
+  <script src="menu.js"></script>
+  <script src="app.js"></script>  
+</body>
+</html>
